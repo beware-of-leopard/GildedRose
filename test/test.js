@@ -2,7 +2,7 @@
 import chai from 'chai';
 
 // Import Any Files to Test
-import { fizz } from "../src/js/main";
+import { fizz, fizzBuzz } from "../src/js/main";
 
 // Set Chai Constants
 const expect = chai.expect;
@@ -16,9 +16,13 @@ describe('Fizzbuzz returns values for different kinds of numbers', function () {
   });
 
   // Your Tests Here
+  it('should be an array', function(){
+  	let result = fizzBuzz(2,10);
+  	expect(result).to.be.a('array');
+  })
 });
 
-UNCOMMENT THE SECTION BELOW FOR HARD MODE
+//UNCOMMENT THE SECTION BELOW FOR HARD MODE
 
 import { GildedRose } from "../src/js/hard";
 
